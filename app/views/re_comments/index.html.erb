@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Re Comments</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Body</th>
+      <th>Recipe</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @re_comments.each do |re_comment| %>
+      <tr>
+        <td><%= re_comment.name %></td>
+        <td><%= re_comment.body %></td>
+        <td><%= re_comment.recipe %></td>
+        <td><%= link_to 'Show', re_comment %></td>
+        <td><%= link_to 'Edit', edit_re_comment_path(re_comment) %></td>
+        <td><%= link_to 'Destroy', re_comment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Re Comment', new_re_comment_path %>

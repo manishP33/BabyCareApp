@@ -1,0 +1,50 @@
+<h1>BY: <%= @blog.name %></h1>
+
+<p>
+  <strong>Title:</strong>
+  <%= @blog.title %>
+</p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @blog.name %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @blog.location %>
+</p>
+
+  <p class="date">
+    Submitted <%= time_ago_in_words(@blog.created_at) %>Ago
+</p>
+
+<p>
+  <strong>Content:</strong>
+  <%= @blog.content %>
+</p>
+
+<%= link_to 'Edit', edit_blog_path(@blog) %> |
+<%= link_to 'Back', blogs_path %>
+
+<hr>
+
+<h2>Comments</h2>
+<% @blog.bl_comments.each do |bl_comment| %>
+<p>
+  <strong>Name:</strong>
+  <%= bl_comment.name %>
+</p>
+<p>
+  <strong>comment:</strong>
+  <%= bl_comment.body %>
+</p>
+<hr>
+<% end %>
+
+
+
+<div id="bl_comments">
+      <h3>Add a Comment:</h3>
+      <%= render "bl_comments/form" %>
+</div>
