@@ -1,10 +1,17 @@
-/* GLOBAL STYLES
+
+ @import "bootstrap-sprockets";
+ @import "bootstrap";
+ /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
   padding-bottom: 40px;
   color: #5a5a5a;
+}
+
+.logo {
+
 }
 
 
@@ -32,6 +39,9 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
+.foot {
+  margin: 20px;
+}
 
 
 /* CUSTOMIZE THE CAROUSEL
@@ -39,7 +49,6 @@ body {
 
 /* Carousel base class */
 .carousel {
-  background-color: orange;
   height: 500px;
   margin-bottom: 60px;
 }

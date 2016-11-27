@@ -5,7 +5,7 @@
 <table>
   <thead>
     <tr>
-      <th>#</th>
+
       <th>Title</th>
       <th>Name</th>
       <th>Image</th>
@@ -14,9 +14,12 @@
   </thead>
 
   <tbody>
-    <% @recipes.each do |recipe| %>
+    <% @recipes.each_with_index do |recipe, i| %>
+
+
       <tr>
-        <td><%= recipe.title %></td>
+
+        <td><%= (i+1) %>.<%= recipe.title %></td>
         <td><%= recipe.name %></td>
         <td><%= recipe.image %></td>
         <td><%= link_to 'Show', recipe %></td>
