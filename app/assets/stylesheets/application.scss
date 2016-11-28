@@ -6,14 +6,21 @@
 /* Padding below the footer and lighter body text */
 
 body {
+  background-image: url('background.jpg');
+  background-repeat: repeat;
+  padding-top: 70px;
   padding-bottom: 40px;
   color: #5a5a5a;
 }
 
 .logo {
-
+background-color: lightgrey;
+border-radius: 20px;
 }
+section {
 
+  margin-top: 100px;
+}
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
@@ -39,8 +46,11 @@ body {
 .navbar-wrapper .navbar .container {
   width: auto;
 }
-.foot {
-  margin: 20px;
+.container {
+  -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, .5);
+    background-color: #FFCCFF;
 }
 
 

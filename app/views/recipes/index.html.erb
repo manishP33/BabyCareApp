@@ -1,37 +1,40 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<h1>Recipes</h1>
+  <h1>Recipes</h1>
 
-<table>
-  <thead>
-    <tr>
-
-      <th>Title</th>
-      <th>Name</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @recipes.each_with_index do |recipe, i| %>
-
-
+  <table>
+    <thead>
       <tr>
 
-        <td><%= (i+1) %>.<%= recipe.title %></td>
-        <td><%= recipe.name %></td>
-        <td><%= recipe.image %></td>
-        <td><%= link_to 'Show', recipe %></td>
-        <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-        <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <th>Title</th>
+        <th>Name</th>
+        <th>Image</th>
+        <th colspan="3"></th>
       </tr>
-    <% end %>
-  </tbody>
-</table>
+    </thead>
 
-<br>
+    <tbody>
+      <% @recipes.each_with_index do |recipe, i| %>
 
-<%= link_to 'Home', welcome_index_path %>
 
-<%= link_to 'New Recipe', new_recipe_path %>
+        <tr>
+
+          <td><%= (i+1) %>.<%= recipe.title %></td>
+          <td><%= recipe.name %></td>
+          <td><%= recipe.image %></td>
+          <td><%= link_to 'Show', recipe %></td>
+          <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+          <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+
+
+  <%= link_to 'New Recipe', new_recipe_path %>
+
+</div>

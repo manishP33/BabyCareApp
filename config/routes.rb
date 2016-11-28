@@ -10,6 +10,9 @@ end
 
 
   get 'welcome/index'
+  get 'welcome/babies'
+  get 'welcome/about'
+  get 'welcome/contact'
 
 
   root "welcome#index"
