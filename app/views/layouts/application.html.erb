@@ -16,10 +16,10 @@
 
 
       <div class="navbar-wrapper">
-        <div class="container">
+        <!-- <div class="container"> -->
 
           <nav class="navbar navbar-inverse navbar-static-top">
-            <div class="container">
+            <!-- <div class="container"> -->
               <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                   <span class="sr-only">Toggle navigation</span>
@@ -31,27 +31,16 @@
               </div>
               <div id="navbar" class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                  <li class="active"><%= link_to 'Home', welcome_index_path %></li>
-                  <li class="active"><%= link_to 'About', welcome_about_path %></li>
-                  <li class="active"><%= link_to 'Contact', welcome_contact_path %></li>
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Action</a></li>
-                      <li><a href="#">Another action</a></li>
-                      <li><a href="#">Something else here</a></li>
-                      <li role="separator" class="divider"></li>
-                      <li class="dropdown-header">Nav header</li>
-                      <li><a href="#">Separated link</a></li>
-                      <li><a href="#">One more separated link</a></li>
-                    </ul>
-                  </li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'Home', welcome_index_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'About', welcome_about_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'Contact', welcome_contact_path %></button></li>
+
                 </ul>
               </div>
-            </div>
+            <!-- </div> -->
           </nav>
 
-        </div>
+        <!-- </div> -->
       </div>
 
       </header>
@@ -64,13 +53,30 @@
 
     <hr class="featurette-divider">
       <!-- FOOTER -->
-      <div class="container">
+
         <footer>
-          <p class="pull-right"><a href="#">Back to top</a></p>
-          <p>&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+          <div class="footer">
+            <p><img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+
+          </div>
         </footer>
 
-      </div>
+
+
+
+      <!-- For Search page-->
+      <script>
+    (function() {
+      var cx = '001506833115012918157:rbkui9t2s5o';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   </body>
 </html>

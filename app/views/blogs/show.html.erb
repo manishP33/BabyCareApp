@@ -1,4 +1,5 @@
 <div class="container">
+<div class="show-page">
   <h1>BY: <%= @blog.name %></h1>
 
   <p>
@@ -7,47 +8,49 @@
   </p>
 
   <p>
-    <strong>Name:</strong>
-    <%= @blog.name %>
-  </p>
-
-  <p>
     <strong>Location:</strong>
     <%= @blog.location %>
   </p>
 
     <p class="date">
-      Submitted <%= time_ago_in_words(@blog.created_at) %>Ago
+    <strong>Submitted:</strong>  <%= time_ago_in_words(@blog.created_at) %>Ago
   </p>
 
   <p>
     <strong>Content:</strong>
     <%= @blog.content %>
   </p>
+</div>
 
-  <%= link_to 'Edit', edit_blog_path(@blog) %> |
-  <%= link_to 'Back', blogs_path %>
+  <button type="button" name="button"><%= link_to 'Edit', edit_blog_path(@blog) %></button> |
+  <button type="button" name="button"><%= link_to 'Back', blogs_path %></button>
 
   <hr>
 
-  <h2>Comments</h2>
-  <% @blog.bl_comments.each do |bl_comment| %>
-  <p>
-    <strong>Name:</strong>
-    <%= bl_comment.name %>
+  <div class="comment-show">
+    <h2>Comments</h2>
+    <% @blog.bl_comments.each do |bl_comment| %>
+    <p>
+      <strong>Name:</strong>
+      <%= bl_comment.name %>
+    </p>
+    <p>
+      <strong>comment:</strong>
+      <%= bl_comment.body %>
+    </p>
+    <p class="date">
+    <strong>Posted:</strong><%= time_ago_in_words(@blog.created_at) %>Ago
   </p>
-  <p>
-    <strong>comment:</strong>
-    <%= bl_comment.body %>
-  </p>
-  <hr>
-  <% end %>
+    <hr>
+    <% end %>
+
+  </div>
 
 
+  <div class="write-comment">
+    <h3>Add a Comment:</h3>
+    <%= render "bl_comments/form" %>
 
-  <div id="bl_comments">
-        <h3>Add a Comment:</h3>
-        <%= render "bl_comments/form" %>
   </div>
 
 </div>

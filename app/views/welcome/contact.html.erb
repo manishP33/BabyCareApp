@@ -1,38 +1,31 @@
+<!-- Container (Contact Section) -->
 <div class="container">
-  <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
-<script type="text/javascript">
-function ValidateForm(frm) {
-if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
-if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
-if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
-return true; }
-</script>
-<table style="width:550px;border:0;" cellpadding="8" cellspacing="0">
-<tr> <td>
-<label for="Name">Name*:</label>
-</td> <td>
-<input name="Name" type="text" maxlength="60" style="width:250px;" />
-</td> </tr> <tr> <td>
-<label for="PhoneNumber">Phone number:</label>
-</td> <td>
-<input name="PhoneNumber" type="text" maxlength="43" style="width:250px;" />
-</td> </tr> <tr> <td>
-<label for="FromEmailAddress">Email address*:</label>
-</td> <td>
-<input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
-</td> </tr> <tr> <td>
-<label for="Comments">Comments*:</label>
-</td> <td>
-<textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea>
-</td> </tr> <tr> <td>
-* - required fields
-</td> <td>
+  <h3 class="text-center">Contact us</h3>
 
-<input name="skip_Submit" type="submit" value="Submit" />
 
-</td> </tr>
-</table>
-</form>
-
+  <div class="row">
+    <div class="col-md-4">
+      <p>Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Maryland, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

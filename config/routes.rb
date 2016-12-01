@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :shoppings
+  resources :videos
   resources :recipes do
   resources :re_comments
 end

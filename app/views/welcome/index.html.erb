@@ -12,7 +12,7 @@
           <img class="first-slide" src="<%= asset_path( 'topscreen.png' ) %>" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-            
+
               <p>Nobody ever becomes an expert parent. But I think good parenting is about consistency. It's about being there at big moments, but it's also just the consistency of decision making. And it's routine. <strong>Sebastian Coe</strong></p>
               <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
             </div>
@@ -53,38 +53,35 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="<%= asset_path( 'blog.png' ) %>" alt="Generic placeholder image" width="140" height="140">
-          <h2><%= link_to 'Blog time', blogs_path %></h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="<%= asset_path( 'cook.png' ) %>" alt="Generic placeholder image" width="140" height="140">
-          <h2><%= link_to 'Share your recipes', recipes_path %></h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="<%= asset_path( 'video.jpg' ) %>" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
+      <div class="link-menu">
+        <div class="row">
+          <div class="col-lg-4">
+            <img class="link-img" src="<%= asset_path( 'blog.png' ) %>" alt="Generic placeholder image" width="140" height="140">
+            <h2><%= link_to 'Blog time', blogs_path %></h2>
+            <p>"If you can learn something new every day, you can teach something new every day." Martha Stewart</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="link-img" src="<%= asset_path( 'cook.png' ) %>" alt="Generic placeholder image" width="140" height="140">
+            <h2><%= link_to 'Share your recipes', recipes_path %></h2>
+            <p>“For each new morning with its light, For rest and shelter of the night,
+                For health and food, for love and friends, For everything Thy goodness sends.”
+
+                ~ Ralph Waldo Emerson</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="link-img" src="<%= asset_path( 'video.jpg' ) %>" alt="Generic placeholder image" width="140" height="140">
+            <h2><%= link_to 'Videos for Babies', videos_path %></h2>
+            <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+          </div><!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <img class="link-img" src="<%= asset_path ('shopping2.jpg') %>" alt="Generic placeholder image" width="140" height="140">
+                <h2><%= link_to 'Shopping', shoppings_path %></h2>
+            <p>Shopping Rule #1 : GRAB IT NOW! Tomorrow it might be gone forever.</p>
+          </div><!-- /.col-lg-4 -->
+
+
+        </div><!-- /.row -->
+      </div>
 
 
       <!-- START THE FEATURETTES -->

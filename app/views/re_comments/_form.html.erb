@@ -1,16 +1,16 @@
 <%= form_for([@recipe, @recipe.re_comments.build]) do |f| %>
 
   <div class="field">
-    <%= f.label :name %>
-    <%= f.text_field :name %>
+    <%= f.label :name, "Name:" %>
+    <%= f.text_field :name, class: "form-control" %>
   </div>
 
   <div class="field">
-    <%= f.label :body %>
-    <%= f.text_area :body %>
+    <%= f.label :body, "Comment:" %>
+    <%= f.text_area :body, class: "form-control" %>
   </div>
 
   <div class="actions">
-    <%= f.submit %>
+    <button type="button" name="button"><%= f.submit 'Submit'%></button>
   </div>
 <% end %>

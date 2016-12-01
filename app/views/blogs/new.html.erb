@@ -1,8 +1,10 @@
 <div class="container">
   <h1>New Blog</h1>
 
-  <%= render 'form', blog: @blog %>
+  <div class="new-blog">
+    <%= render 'form', blog: @blog %>
+  </div>
 
-  <%= link_to 'Back', blogs_path %>
+  <button type="button" name="button"><%= link_to 'Back', blogs_path %></button>
 
 </div>

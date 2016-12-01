@@ -6,11 +6,17 @@
 /* Padding below the footer and lighter body text */
 
 body {
-  background-image: url('background.jpg');
+  background-image: url('background1.jpg');
+  background-attachment:fixed;
   background-repeat: repeat;
   padding-top: 70px;
   padding-bottom: 40px;
   color: #5a5a5a;
+  // background: blue; /* For browsers that do not support gradients */
+  // background: -webkit-linear-gradient(blue, lightblue, blue); /* For Safari 5.1 to 6.0 */
+  // background: -o-linear-gradient(blue, lightblue, blue); /* For Opera 11.1 to 12.0 */
+  // background: -moz-linear-gradient(blue, lightblue, blue); /* For Firefox 3.6 to 15 */
+  // background: linear-gradient(blue, lightblue, blue); /* Standard syntax */
 }
 
 .logo {
@@ -19,13 +25,116 @@ border-radius: 20px;
 }
 section {
 
-  margin-top: 100px;
+  margin-top: 90px;
 }
+
+.featurette-divider{
+  height: 20px;
+  background: url(star.png) repeat center;
+  border: none;
+}
+
+img{
+  border: 2px double teal;
+}
+.link-img{
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.col-lg-5 {
+  border: 2px solid black;
+  background-color: lightblue;
+  border-radius: 10px;
+  text-align: center;
+  height: 300px;
+  margin-left: 50px;
+  margin-bottom: 30px;
+}
+.col-lg-4 {
+  background-color: lightblue;
+  border-bottom: 5px double blue;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  margin: 5%;
+  width: 90%;
+}
+button {
+    color: #19667d;
+    background: #70c9e3;
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    padding: 0 20px;
+    text-align: center;
+    text-decoration: none;
+    font: bold 25px Arial, sans-serif;
+
+    text-shadow: 1px 1px 1px rgba(255,255,255, .22);
+
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    -moz-box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+    box-shadow: 1px 1px 1px rgba(0,0,0, .29), inset 1px 1px 1px rgba(255,255,255, .44);
+
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+/* Recipe page/ Blog page
+-------------------------------------------------- */
+
+.show-page {
+  background-color: lightgreen;
+  border-radius: 10px;
+  border: 10px solid transparent;
+   padding: 15px;
+   -webkit-border-image: url('border.png') 20% round; /* Safari 3.1-5 */
+   border-image: url('border.png') 20% round;
+}
+
+.comment-show{
+  border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url('border.png') 30 stretch; /* Safari 3.1-5 */
+    border-image: url('border.png') 30 stretch;
+
+}
+.write-comment{
+  border: 10px solid transparent;
+    padding: 15px;
+    -webkit-border-image: url('border.png') 30 stretch; /* Safari 3.1-5 */
+    border-image: url('border.png') 30 stretch;
+}
+.new-blog {
+
+}
+.field {
+  width: 400px;
+}
+
+
+/* Shopping page
+-------------------------------------------------- */
+.shopping-img {
+  margin-left: 350px;
+}
+
+
 
 /* CUSTOMIZE THE NAVBAR
 -------------------------------------------------- */
-
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
+nav{
+  margin-top: 1px;
+  font-size: 30px;
+}
+
 .navbar-wrapper {
   position: absolute;
   top: 0;
@@ -47,10 +156,26 @@ section {
   width: auto;
 }
 .container {
-  -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0,0.5);
-    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, .5);
-    box-shadow: 2px 4px 15px rgba(0, 0, 0, .5);
-    background-color: #FFCCFF;
+  -moz-box-shadow: 2px 4px 8px rgba(0, 0, 0, 5);
+    -webkit-box-shadow: 2px 4px 8px rgba(0, 0, 0, 5);
+    box-shadow: 2px 4px 15px rgba(0, 0, 0, 5);
+    background-color: lightyellow;
+    border-radius: 20px;
+}
+.active {
+  margin-top: 30px;
+  margin-left: 20px;
+
+}
+
+nav.navbar.navbar-inverse.navbar-static-top {
+  border: 5px solid darkblue;
+  background-image: url('background2.jpg');
+  box-shadow: 4px 4px 15px darkblue;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 20px;
+
 }
 
 
@@ -61,6 +186,7 @@ section {
 .carousel {
   height: 500px;
   margin-bottom: 60px;
+
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
@@ -69,8 +195,10 @@ section {
 
 /* Declare heights because of positioning of img element */
 .carousel .item {
+  margin-top: 1px;
+  margin-left: 1px;
   height: 500px;
-  background-color: #777;
+  background-color: blue;
 }
 .carousel-inner > .item > img {
   position: absolute;
@@ -78,6 +206,12 @@ section {
   left: 0;
   min-width: 100%;
   height: 500px;
+}
+.link-menu {
+  background-image: url(linkmenuback.jpg);
+  background-size: contain;
+  margin-top: 20px;
+  border-radius: 20px;
 }
 
 
@@ -122,8 +256,8 @@ section {
     margin-top: 20px;
   }
   .navbar-wrapper .container {
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .navbar-wrapper .navbar {
     padding-right: 0;
@@ -151,4 +285,15 @@ section {
   .featurette-heading {
     margin-top: 120px;
   }
+}
+
+/* FOOTER
+-----------------------------------*/
+.footer {
+  font-weight: bold;
+  background-color: white;
+  height: 170px;
+  width: 90%;
+  padding: 20px;
+  margin-left: 70px;
 }

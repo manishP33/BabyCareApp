@@ -1,39 +1,37 @@
 <div class="container">
   <p id="notice"><%= notice %></p>
-  <h1>BY: <%= @recipe.name %></h1>
-  <p>
-    <strong>Title:</strong>
-    <%= @recipe.title %>
-  </p>
+  <div class="show-page">
+    <h1>BY: <%= @recipe.name %></h1>
+    <p>
+      <strong>Title:</strong>
+      <%= @recipe.title %>
+    </p>
 
-  <p>
-    <strong>Name:</strong>
-    <%= @recipe.name %>
-  </p>
-
-  <p class="date">
-    Submitted <%= time_ago_in_words(@recipe.created_at) %>Ago
-  </p>
+    <p class="date">
+      <strong>Submitted:</strong>  <%= time_ago_in_words(@recipe.created_at) %>Ago
+    </p>
 
 
-  <p>
-    <strong>Image:</strong>
-      <%= image_tag @recipe.image.url%>
-  </p>
+    <p>
+      <strong>Image:</strong>
+        <%= image_tag @recipe.image.url%>
+    </p>
 
-  <p>
-    <strong>Ingredients:</strong>
-    <%= @recipe.ingredients %>
-  </p>
+    <p>
+      <strong>Ingredients:</strong>
+      <%= @recipe.ingredients %>
+    </p>
 
-  <p>
-    <strong>Description:</strong>
-    <%= @recipe.description %>
-  </p>
+    <p>
+      <strong>Description:</strong>
+      <%= @recipe.description %>
+    </p>
 
-  <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
-  <%= link_to 'Back', recipes_path %>
+  </div>
+  <button type="button" name="button"><%= link_to 'Edit', edit_recipe_path(@recipe) %></button> |
+  <button type="button" name="button"><%= link_to 'Back', recipes_path %></button>
 
+<div class="comment-show">
   <h2>Comments</h2>
   <% @recipe.re_comments.each do |re_comment| %>
   <p>
@@ -44,12 +42,16 @@
     <strong>comment:</strong>
     <%= re_comment.body %>
   </p>
+  <p class="date">
+  <strong>Posted:</strong><%= time_ago_in_words(@recipe.created_at) %>Ago
+</p>
   <hr>
   <% end %>
+</div>
 
 
 
-  <div id="re_comments">
+  <div class="write-comment">
         <h3>Add a Comment:</h3>
         <%= render "re_comments/form" %>
   </div>
