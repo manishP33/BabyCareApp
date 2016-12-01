@@ -28,7 +28,12 @@ section {
   margin-top: 90px;
 }
 
-.featurette-divider{
+.featurette-divider {
+  height: 20px;
+  background: url(star.png) repeat center;
+  border: none;
+}
+hr{
   height: 20px;
   background: url(star.png) repeat center;
   border: none;
@@ -161,6 +166,9 @@ nav{
     box-shadow: 2px 4px 15px rgba(0, 0, 0, 5);
     background-color: lightyellow;
     border-radius: 20px;
+    padding: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
 }
 .active {
   margin-top: 30px;
@@ -208,7 +216,7 @@ nav.navbar.navbar-inverse.navbar-static-top {
   height: 500px;
 }
 .link-menu {
-  background-image: url(linkmenuback.jpg);
+  background-image: url('linkmenuback.jpg');
   background-size: contain;
   margin-top: 20px;
   border-radius: 20px;
@@ -296,4 +304,5 @@ nav.navbar.navbar-inverse.navbar-static-top {
   width: 90%;
   padding: 20px;
   margin-left: 70px;
+  border-radius: 20px;
 }

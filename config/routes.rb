@@ -15,6 +15,8 @@ end
   get 'welcome/babies'
   get 'welcome/about'
   get 'welcome/contact'
+  get 'welcome/toddler'
+  get 'welcome/preschooler'
 
 
   root "welcome#index"

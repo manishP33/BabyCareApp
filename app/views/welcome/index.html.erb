@@ -85,24 +85,11 @@
 
 
       <!-- START THE FEATURETTES -->
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
-        </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
-        </div>
-      </div>
-
       <hr class="featurette-divider">
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">6 Things You May Not Know Your Baby Can Do. <span class="text-muted"><%= link_to 'Read all', welcome_babies_path  %></span></h2>
+          <h2 class="featurette-heading">6 Things You May Not Know Your Baby Can Do. <span class="text-muted"><%= link_to 'Read all...', welcome_babies_path  %></span></h2>
           <p class="lead">We bet you had no idea how much your baby could do until now! Read on to find out why you're really living with a Superbaby!</p>
         </div>
         <div class="col-md-5 col-md-pull-7">
@@ -114,11 +101,24 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Age-by-age guide to feeding your toddler.<span class="text-muted"><%= link_to 'Read all...', welcome_toddler_path  %></span></h2>
+          <p class="lead">Use this guide to find out what and how much to feed your child from months 12 to 36. Don't worry if your child eats more or less than the amounts suggested – they're meant as general guidelines.</p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="featurette-image img-responsive center-block" src="<%= asset_path( 'feeding.jpg' ) %>" alt="Generic placeholder image">
+        </div>
+      </div>
+
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Fun activities to promote speaking skills for your preschooler.<span class="text-muted"><%= link_to 'Read all...', welcome_preschooler_path  %></span></h2>
+          <p class="lead">Do you sometimes have trouble understanding what your preschooler says? You can help her hone her speaking skills by becoming an active listener.</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="<%= asset_path( 'speaking.jpg' ) %>" alt="Generic placeholder image">
         </div>
       </div>
 
