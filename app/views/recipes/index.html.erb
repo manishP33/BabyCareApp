@@ -22,7 +22,7 @@
 
           <td><%= (i+1) %>.<%= recipe.title %></td>
           <td><%= recipe.name %></td>
-          <td><%= recipe.image_url %></td>
+          <td><%= recipe.image %></td>
           <td><%= link_to 'Show', recipe %></td>
           <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
           <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
