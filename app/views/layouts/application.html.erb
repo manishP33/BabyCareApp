@@ -5,7 +5,9 @@
     <title>BabyCareApp</title>
     <%= csrf_meta_tags %>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kurale" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kavoon" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -33,6 +35,10 @@
                 <ul class="nav navbar-nav">
                   <li class="active"><button type="button" name="button"><%= link_to 'Home', welcome_index_path %></button></li>
                   <li class="active"><button type="button" name="button"><%= link_to 'About', welcome_about_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'Blogs', blogs_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'Recipe Blogs', recipes_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'videos', videos_path %></button></li>
+                  <li class="active"><button type="button" name="button"><%= link_to 'Shopping', shoppings_path %></button></li>
                   <li class="active"><button type="button" name="button"><%= link_to 'Contact', welcome_contact_path %></button></li>
 
                 </ul>
@@ -54,16 +60,25 @@
     <hr class="featurette-divider">
       <!-- FOOTER -->
 
-        <footer>
-          <div class="footer">
-            <p><img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-            <p class="pull-right"><a href="#">Back to top</a></p>
+   <div class="container">
+     <footer>
+       <div class="footer">
+         <!-- Twitter -->
+<a href="http://twitter.com/home?status=SHAREMESSAGE" title="Share on Twitter" target="_blank" class="btn btn-twitter"><i class="fa fa-twitter"></i> Twitter</a>
+<!-- Facebook -->
+<a href="https://www.facebook.com/sharer/sharer.php?u=SHAREMESSAGE" title="Share on Facebook" target="_blank" class="btn btn-facebook"><i class="fa fa-facebook"></i> Facebook</a>
+<!-- Google+ -->
+<a href="https://plus.google.com/share?url=SHAREMESSAGE" title="Share on Google+" target="_blank" class="btn btn-googleplus"><i class="fa fa-google-plus"></i> Google+</a>
+<!-- StumbleUpon -->
+<a href="http://www.stumbleupon.com/submit?url=SHAREMESSAGE" title="Share on StumbleUpon" target="_blank" data-placement="top" class="btn btn-stumbleupon"><i class="fa fa-stumbleupon"></i> Stumbleupon</a>
+<!-- LinkedIn -->
+<a href="http://www.linkedin.com/shareArticle?mini=true&url=&title=&summary=SHAREMESSAGE" title="Share on LinkedIn" target="_blank" class="btn btn-linkedin"><i class="fa fa-linkedin"></i> LinkedIn</a>
+         <p><img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">&copy; 2016 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+         <p class="pull-right"><a href="#">Back to top</a></p>
 
-          </div>
-        </footer>
-
-
-
+       </div>
+     </footer>
+   </div>
 
       <!-- For Search page-->
       <script>
