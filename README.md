@@ -17,8 +17,7 @@ As being a parent myself, inspired me to make this app for all parents  around t
  and outlets.
 
 ## My wireframe:
-
-
+![screen shot 2016-12-02 at 10 56 02 am](https://cloud.githubusercontent.com/assets/20705119/20840369/043f807c-b87e-11e6-97ba-4c037b25c086.png)
 
 ##Technologies Used:
 I have made this app using Ruby on Rails.
