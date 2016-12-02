@@ -21,9 +21,12 @@
           <td><%= blog.title %></td>
           <td><%= blog.name %></td>
           <td><%= blog.location %></td>
-          <td><%= link_to 'Show', blog %></td>
-          <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
-          <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+          <td><button type="button" name="button"><%= link_to 'Show', blog %></button></td>
+
+<!-- Only to use when using User authentication -->
+
+          <!-- <td><%= link_to 'Edit', edit_blog_path(blog) %></td>
+          <td><%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
         </tr>
       <% end %>
     </tbody>

@@ -28,7 +28,9 @@
     </p>
 
   </div>
-  <button type="button" name="button"><%= link_to 'Edit', edit_recipe_path(@recipe) %></button> |
+
+  <!-- Only to use when using User authentication -->
+  <!-- <button type="button" name="button"><%= link_to 'Edit', edit_recipe_path(@recipe) %></button> | -->
   <button type="button" name="button"><%= link_to 'Back', recipes_path %></button>
 
 <div class="comment-show">
@@ -42,9 +44,7 @@
     <strong>comment:</strong>
     <%= re_comment.body %>
   </p>
-  <p class="date">
-  <strong>Posted:</strong><%= time_ago_in_words(@recipe.created_at) %>Ago
-</p>
+
   <hr>
   <% end %>
 </div>

@@ -9,7 +9,7 @@
 
         <th>Title</th>
         <th>Name</th>
-        <th>Image</th>
+
         <th colspan="3"></th>
       </tr>
     </thead>
@@ -22,10 +22,14 @@
 
           <td><%= (i+1) %>.<%= recipe.title %></td>
           <td><%= recipe.name %></td>
-          <td><%= recipe.image %></td>
-          <td><%= link_to 'Show', recipe %></td>
-          <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
-          <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+          <td><button type="button" name="button"><%= link_to 'Show', recipe %></button></td>
+
+
+<!-- Only to use when using User authentication -->
+
+          <!-- <td><%= link_to 'Edit', edit_recipe_path(recipe) %></td>
+          <td><%= link_to 'Destroy', recipe, method: :delete, data: { confirm: 'Are you sure?' } %></td> -->
         </tr>
       <% end %>
     </tbody>

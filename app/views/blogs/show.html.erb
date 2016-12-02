@@ -21,8 +21,8 @@
     <%= @blog.content %>
   </p>
 </div>
-
-  <button type="button" name="button"><%= link_to 'Edit', edit_blog_path(@blog) %></button> |
+   <!-- Only to use when using User authentication -->
+  <!-- <button type="button" name="button"><%= link_to 'Edit', edit_blog_path(@blog) %></button> | -->
   <button type="button" name="button"><%= link_to 'Back', blogs_path %></button>
 
   <hr>
@@ -38,9 +38,7 @@
       <strong>comment:</strong>
       <%= bl_comment.body %>
     </p>
-    <p class="date">
-    <strong>Posted:</strong><%= time_ago_in_words(@blog.created_at) %>Ago
-  </p>
+
     <hr>
     <% end %>
 
