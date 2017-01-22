@@ -15,29 +15,33 @@
   <body>
 
 <header>
+  <div class="headpic">
+    <!-- <img src="<%= asset_path('topscreen.jpeg') %>" alt="topscreen"> -->
+  </div>
   <div class="navbar-wrapper">
     <!-- <div class="container"> -->
 
-      <nav class="navbar navbar-inverse navbar-static-top">
+      <nav class="navbar navbar-default navbar-static-top">
         <!-- <div class="container"> -->
           <div class="navbar-header">
+            <a class="navbar-brand" href="<%= welcome_index_path %>">Baby Care App</a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">
+
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><button type="button" name="button"><%= link_to 'Home', welcome_index_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'About', welcome_about_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'Blogs', blogs_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'Recipe Blogs', recipes_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'videos', videos_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'Shopping', shoppings_path %></button></li>
-              <li class="active"><button type="button" name="button"><%= link_to 'Contact', welcome_contact_path %></button></li>
+              <li><%= link_to 'Home', welcome_index_path %></li>
+              <li><%= link_to 'About', welcome_about_path %></li>
+              <li><%= link_to 'Blogs', blogs_path %></li>
+              <li><%= link_to 'Recipe Blogs', recipes_path %></li>
+              <li><%= link_to 'videos', videos_path %></li>
+              <li><%= link_to 'Shopping', shoppings_path %></li>
+              <li><%= link_to 'Contact', welcome_contact_path %></li>
 
             </ul>
           </div>
@@ -69,7 +73,7 @@
           </h5>
         </div>
 
-         <p><img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">&copy; 2016 ManishP.</p>
+         <p><img class="logo" src="<%= asset_path('logo.png') %>" alt="logo">&copy; 2016 ManishKP.</p>
          <p class="pull-right"><a href="#">Back to top</a></p>
 
        </div>

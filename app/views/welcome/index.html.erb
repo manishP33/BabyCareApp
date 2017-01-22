@@ -1,7 +1,7 @@
   <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+    <!-- <div id="myCarousel" class="carousel slide" data-ride="carousel">
+
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -13,7 +13,7 @@
           <div class="container">
             <div class="carousel-caption">
 
-              <p style="color: black;">Nobody ever becomes an expert parent. But I think good parenting is about consistency. It's about being there at big moments, but it's also just the consistency of decision making. And it's routine. <strong>Sebastian Coe</strong></p>
+              <p class="carouselPara">Nobody ever becomes an expert parent. But I think good parenting is about consistency. It's about being there at big moments, but it's also just the consistency of decision making. And it's routine. <strong>Sebastian Coe</strong></p>
 
             </div>
           </div>
@@ -22,8 +22,8 @@
           <img class="second-slide" src="<%= asset_path( 'topscreen2.png' ) %>" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
-              <h2 style="color: black;">Toddlers</h2>
-              <p style="color: black;">The craziest, messiest, most infuriating, emotionally unstable, unreasonable, frustrating, tiring people you couldn't imagine your life without.</p>
+
+              <p class="carouselPara">The craziest, messiest, most infuriating, emotionally unstable, unreasonable, frustrating, tiring people you couldn't imagine your life without.</p>
 
             </div>
           </div>
@@ -32,7 +32,7 @@
           <img class="third-slide" src="<%= asset_path( 'topscreen3.png' ) %>" alt="Third slide">
           <div class="container">
             <div class="carousel-caption">
-              <p style="color: black;">Parents are the ultimate role models for children. Every word, movement and action has an effect. No other person or outside force has a greater influence on a child than the parent.</p>
+              <p class="carouselPara">Parents are the ultimate role models for children. Every word, movement and action has an effect. No other person or outside force has a greater influence on a child than the parent.</p>
 
             </div>
           </div>
@@ -46,34 +46,34 @@
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
-    </div><!-- /.carousel -->
+    </div> --><!-- /.carousel -->
 
 
     <div class="container marketing">
 
-      <!-- Three columns of text below the carousel -->
+
       <div class="link-menu">
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-5 front">
             <img class="link-img" src="<%= asset_path( 'blog.png' ) %>" alt="Generic placeholder image" width="140" height="140">
             <h2><%= link_to 'Blog time', blogs_path %></h2>
 
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          </div><!-- /.col-lg-5 -->
+          <div class="col-lg-5 front">
             <img class="link-img" src="<%= asset_path( 'cook.png' ) %>" alt="Generic placeholder image" width="140" height="140">
             <h2><%= link_to 'Share your recipes', recipes_path %></h2>
 
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          </div><!-- /.col-lg-5 -->
+          <div class="col-lg-5 front">
             <img class="link-img" src="<%= asset_path( 'video.jpg' ) %>" alt="Generic placeholder image" width="140" height="140">
             <h2><%= link_to 'Videos for Babies', videos_path %></h2>
             <p></p>
-          </div><!-- /.col-lg-4 -->
-          <div class="col-lg-4">
+          </div><!-- /.col-lg-5 -->
+          <div class="col-lg-5 front">
             <img class="link-img" src="<%= asset_path ('shopping2.jpg') %>" alt="Generic placeholder image" width="140" height="140">
                 <h2><%= link_to 'Shopping', shoppings_path %></h2>
 
-          </div><!-- /.col-lg-4 -->
+          </div><!-- /.col-lg-5 -->
 
 
         </div><!-- /.row -->
@@ -109,13 +109,14 @@
       <hr class="featurette-divider">
 
       <div class="row featurette">
+        <div class="col-md-5">
+          <img class="featurette-image img-responsive center-block" src="<%= asset_path( 'speaking.jpg' ) %>" alt="Generic placeholder image">
+        </div>
         <div class="col-md-7">
           <h3 class="featurette-heading">Fun activities to promote speaking skills for your preschooler.<span class="text-muted"><%= link_to 'Read all...', welcome_preschooler_path  %></span></h3>
           <p class="lead">Do you sometimes have trouble understanding what your preschooler says? You can help her hone her speaking skills by becoming an active listener.</p>
         </div>
-        <div class="col-md-5">
-          <img class="featurette-image img-responsive center-block" src="<%= asset_path( 'speaking.jpg' ) %>" alt="Generic placeholder image">
-        </div>
+
       </div>
 
     </div><!-- /.container -->
